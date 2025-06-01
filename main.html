@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ПИНсайт</title>
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename = 'css/styles.css')}}">
+</head>
+<body class="background">
+    <div class="nameblock">
+        <p class="nameblocktext">Анкета</p>
+    </div>
+    <body>
+        <form method="POST" action="{{ url_for('form') }}">
+            <p class="question">Имя</p>
+            <input class="name" type="text" name="name1" placeholder="Введите ваше имя" onchange='eventForm(this.value)'>
+            <p class="question">Фамилия</p>
+            <input class="name" type="text" name="name2" placeholder="Введите вашу фамилию" onchange='eventForm(this.value)'>
+            <p class="question">Отчество</p>
+            <input class="name" type="text" name="name3" placeholder="Введите ваше отчество" onchange='eventForm(this.value)'>
+            <p class="question">Возраст</p>
+            <input class="name" type="text" name="name4" placeholder="Введите ваш возраст" onchange='eventForm(this.value)'>
+            <p class="question">Факультет</p>
+            <input class="name" type="text" name="name5" placeholder="Введите ваш факультет" onchange='eventForm(this.value)'>
+            <p class="question">Группа</p>
+            <input class="name" type="text" name="name6" placeholder="Введите вашу группу    " onchange='eventForm(this.value)'>
+            <button class="buttonstyle">Сохранить данные</button>
+        </form>
+    </body>
+</body>
+</html>
